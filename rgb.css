@@ -1,0 +1,25 @@
+div{
+	background-color: #232323;
+}
+
+#align{
+	background: blue;
+	color: white;
+	text-align: center;
+	margin-top: 0px;
+}
+
+.square{
+	padding: 15%;
+	float: left;
+	margin: 1.66%;
+}
+
+#stripe{
+	background-color: pink;
+	text-align: center;
+}
+
+#newColor{
+	margin-right: 10px;
+}
