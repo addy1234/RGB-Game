@@ -5,6 +5,39 @@ var picked = pickColor();
 var colorDisplay = document.querySelector("#colorDisplay");
 var messageDisplay = document.querySelector("#messageDisplay");
 var newColor = document.querySelector("#newColor");
+var easyButton = document.querySelector("#easy");
+var hardButton = document.querySelector("#hard");
+
+easyButton.addEventListener("click",function(){
+	hardButton.classList.remove("selected");
+	easyButton.classList.add("selected");
+	colors = generateRandomColor(3);
+	picked = pickColor();
+	colorDisplay.textContent = picked;
+	for(var i = 0; i < 6; i++){
+		if( i < 3 ){
+			squares[i].style.backgroundColor = colors[i];
+		}else{
+			squares[i].style.display = "none";
+		}
+	}
+})
+
+hardButton.addEventListener("click",function(){
+	hardButton.classList.add("selected");
+	easyButton.classList.remove("selected");
+	colors = generateRandomColor(6);
+	picked = pickColor();
+	colorDisplay.textContent = picked;
+	for(var i = 0; i < 6; i++){
+		if(i < 3){
+			squares[i].style.backgroundColor = colors[i];
+		}else{
+			squares[i].style.display = "block";
+		}
+	}
+})
+
 
 colorDisplay.textContent = picked;
 
