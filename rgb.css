@@ -1,23 +1,30 @@
 html,body{
 	background-color: #232323;
-	padding-top: 0;
+	margin: 0;
 }
 
 #align{
 	background: blue;
 	color: white;
 	text-align: center;
-	margin-top: 0;
+	margin: 0;
+}
+
+#colorDisplay{
+	text-transform: uppercase;
+	font-size: 200%;
 }
 
 .square{
 	padding: 15%;
 	float: left;
 	margin: 1.66%;
+	border-radius: 25%;
+	transition: background 0.5s;
 }
 
 #stripe{
-	background-color: pink;
+	background-color: white;
 	text-align: center;
 	margin: 0;
 }
@@ -27,11 +34,35 @@ html,body{
 }
 
 .selected {
-	background: blue;
+	color :white;
+	background-color: steelblue;
 }
 
 #container{
 	height: 400px;
 	width: 600px;
 	margin: 15px auto;
+}
+
+button{
+	background-color: pink;
+	border: none;
+	text-transform: uppercase;
+	height:100%;
+	font-weight: 700;
+	color: steelblue;
+	font-size: inherit;
+	transition: all 0.3s; /*It will provide the animation effect 
+	and whenever any CSS property of that button changes it will 
+	take around 0.3s to change that property*/
+}
+
+#messageDisplay{
+	display: inline-block;
+	width:20%;
+}
+
+button:hover{
+	color :white;
+	background-color: steelblue;
 }

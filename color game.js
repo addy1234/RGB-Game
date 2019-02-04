@@ -62,7 +62,7 @@ for(var i = 0; i < squares.length; i++){
 		var clickedColor = this.style.backgroundColor;
 		if(clickedColor != picked){
 			var body = document.querySelector("body");
-			this.style.backgroundColor = "white";
+			this.style.backgroundColor = "#232323";
 			messageDisplay.textContent = "Try Again"
 		}else{
 			messageDisplay.textContent = "Correct"
