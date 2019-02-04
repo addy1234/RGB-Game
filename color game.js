@@ -1,5 +1,5 @@
-var colors = generateRandomColor(6);
-
+var numSquares = 6;
+var colors = generateRandomColor(numSquares);
 var squares = document.querySelectorAll(".square");
 var picked = pickColor();
 var colorDisplay = document.querySelector("#colorDisplay");
@@ -11,7 +11,8 @@ var hardButton = document.querySelector("#hard");
 easyButton.addEventListener("click",function(){
 	hardButton.classList.remove("selected");
 	easyButton.classList.add("selected");
-	colors = generateRandomColor(3);
+	numSquares = 3;
+	colors = generateRandomColor(numSquares);
 	picked = pickColor();
 	colorDisplay.textContent = picked;
 	for(var i = 0; i < 6; i++){
@@ -26,7 +27,7 @@ easyButton.addEventListener("click",function(){
 hardButton.addEventListener("click",function(){
 	hardButton.classList.add("selected");
 	easyButton.classList.remove("selected");
-	colors = generateRandomColor(6);
+	colors = generateRandomColor(numSquares);
 	picked = pickColor();
 	colorDisplay.textContent = picked;
 	for(var i = 0; i < 6; i++){
@@ -44,7 +45,7 @@ colorDisplay.textContent = picked;
 //Code for the new color button
 newColor.addEventListener("click",function(){
 	//0console.log("hello");
-	colors=generateRandomColor(6);
+	colors=generateRandomColor(numSquares);
 	picked = pickColor();
 	colorDisplay.textContent = picked;
 	for(var i = 0; i < squares.length; i++){

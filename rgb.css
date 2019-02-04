@@ -1,12 +1,13 @@
-div{
+html,body{
 	background-color: #232323;
+	padding-top: 0;
 }
 
 #align{
 	background: blue;
 	color: white;
 	text-align: center;
-	margin-top: 0px;
+	margin-top: 0;
 }
 
 .square{
@@ -18,6 +19,7 @@ div{
 #stripe{
 	background-color: pink;
 	text-align: center;
+	margin: 0;
 }
 
 #newColor{
@@ -26,4 +28,10 @@ div{
 
 .selected {
 	background: blue;
+}
+
+#container{
+	height: 400px;
+	width: 600px;
+	margin: 15px auto;
 }
